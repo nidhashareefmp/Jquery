@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            // fade in
+            $("#fadeInbtn").click(function () {
+                $("#box").fadeIn(1000);
+            });
+
+            // fade out
+            $("#fadeOutbtn").click(function () {
+                $("#box").fadeOut(1000);
+            })
+
+            // fade toggle
+            $("#fadeTogglebtn").click(function () {
+                $("#box").fadeToggle(1000);
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+    <div id="box" style="width: 100px; height: 100px; background-color: aqua;"></div>
+    <button id="fadeInbtn">Fade In</button>
+    <button id="fadeOutbtn">Fade Out</button>
+    <button id="fadeTogglebtn">Fade Toggle</button>
+
+</body>
+
+</html>
